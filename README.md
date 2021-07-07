@@ -1,1 +1,4 @@
 # NLWT-Node
+
+# devDependencies
+- typescript
