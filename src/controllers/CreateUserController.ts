@@ -3,10 +3,10 @@ import { CreateUserService } from '../services/CreateUserService'
 
 class CreateUserController {
     async handle(req: Request, res: Response){
-        const { name, email, admin} = req.body
+        const { name, email, admin, password} = req.body
 
         const UserService = new CreateUserService
-        const user = await UserService.execute({name, email, admin})
+        const user = await UserService.execute({name, email, admin, password})
         
         console.log('handle ok');
         
